@@ -156,3 +156,70 @@ td {
   background-color: #c8ff00;
   color: #000;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .profile-section {
+    margin-bottom: 0;
+  }
+
+  .menu-section ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .menu-section li {
+    margin: 0 10px;
+  }
+
+  .main-content {
+    padding: 20px;
+    margin-top: 20px;
+  }
+
+  .dashboard-actions {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .action-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-logo {
+    font-size: 18px;
+  }
+
+  .menu-section a {
+    font-size: 16px;
+  }
+
+  .dashboard-header h2 {
+    font-size: 20px;
+  }
+
+  .action-box {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+}

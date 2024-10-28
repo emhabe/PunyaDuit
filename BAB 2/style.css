@@ -26,13 +26,16 @@ header {
   list-style: none;
   display: flex;
 }
+
 .atas {
   display: flex;
 }
+
 h3.home {
   margin-top: 4px;
   margin-left: 50px;
 }
+
 h3.about {
   margin-top: 4px;
   margin-left: 20px;
@@ -130,6 +133,7 @@ h3.about {
 .feature-card p {
   font-size: 14px;
 }
+
 /* Toast Styles */
 #toast {
   visibility: hidden;
@@ -146,10 +150,12 @@ h3.about {
   bottom: 30px;
   font-size: 17px;
 }
+
 #toast.show {
   visibility: visible;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
+
 @keyframes fadein {
   from {
     bottom: 0;
@@ -160,6 +166,7 @@ h3.about {
     opacity: 1;
   }
 }
+
 @keyframes fadeout {
   from {
     bottom: 30px;
@@ -168,5 +175,77 @@ h3.about {
   to {
     bottom: 0;
     opacity: 0;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .hero {
+    padding: 30px;
+    margin: 20px 20px;
+  }
+
+  .hero-content h1 {
+    font-size: 28px; /* Adjust heading size */
+  }
+
+  .hero-content p {
+    font-size: 14px; /* Adjust paragraph size */
+  }
+
+  .features {
+    padding: 30px;
+  }
+
+  .features h2 {
+    font-size: 24px; /* Adjust features heading size */
+  }
+
+  .feature-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-card {
+    width: 90%; /* Adjust card width for smaller screens */
+    margin-bottom: 20px; /* Add space between cards */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px; /* Adjust logo size */
+  }
+
+  .get-started {
+    padding: 8px 16px; /* Adjust button padding */
+  }
+
+  .feature-card .icon {
+    width: 50px; /* Adjust icon size */
+    height: 50px; /* Adjust icon size */
+  }
+
+  .feature-card h3 {
+    font-size: 18px; /* Adjust feature title size */
+  }
+
+  .feature-card p {
+    font-size: 12px; /* Adjust feature description size */
   }
 }

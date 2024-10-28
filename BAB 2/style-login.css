@@ -110,3 +110,60 @@ button:hover {
   color: #c8ff00;
   text-decoration: none;
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links,
+  .auth-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-links li,
+  .auth-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .signup-box {
+    width: 90%; /* Use a percentage width for smaller screens */
+    padding: 20px; /* Reduce padding */
+  }
+
+  h2 {
+    font-size: 24px; /* Adjust heading size */
+  }
+
+  p {
+    font-size: 12px; /* Adjust paragraph size */
+  }
+
+  button {
+    font-size: 14px; /* Adjust button font size */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 20px; /* Adjust logo size */
+  }
+
+  h2 {
+    font-size: 22px; /* Further reduce heading size */
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 8px; /* Reduce input padding */
+  }
+
+  button {
+    padding: 10px; /* Reduce button padding */
+  }
+}

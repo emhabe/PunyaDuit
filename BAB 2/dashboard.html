@@ -20,7 +20,7 @@
           <ul>
             <li class="active"><a href="#">Dashboard</a></li>
             <li><a href="#">Transaction</a></li>
-            <li><a href="#">Payment</a></li>
+            <li><button onclick="confirmLogout()">Logout</button></li>
           </ul>
         </div>
       </aside>
@@ -93,3 +93,12 @@
     </div>
   </body>
 </html>
+<script>
+  function confirmLogout() {
+      const confirmation = confirm("Apakah Anda yakin ingin keluar?");
+      if (confirmation) {
+          // Arahkan pengguna ke halaman logout
+          window.location.href = "logout.php"; // Ganti dengan URL logout Anda
+      }
+  }
+</script>
