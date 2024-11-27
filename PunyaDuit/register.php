@@ -25,10 +25,10 @@
       <div class="signup-box">
         <h2>Join Now!</h2>
         <p>Please Enter Your Details</p>
-        <form>
-          <input type="text" placeholder="Username" required />
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
+        <form action="post-register.php" method="POST">
+          <input type="text" name="username" placeholder="Username" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="password" name="password" placeholder="Password" required />
           <button type="submit">Sign Up</button>
         </form>
         <p class="login-text">

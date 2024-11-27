@@ -25,9 +25,9 @@
       <div class="signup-box">
         <h2>Welcome Back !</h2>
         <p>Please Enter Your Details</p>
-        <form>
-          <input type="email" placeholder="Email" required />
-          <input type="password" placeholder="Password" required />
+        <form action="post-login.php" method="post">
+          <input type="text" name="username" placeholder="Username" required />
+          <input type="password" name="password" placeholder="Password" required />
           <button type="submit">Log in</button>
         </form>
         <p class="login-text">
